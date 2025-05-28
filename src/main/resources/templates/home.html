@@ -1,0 +1,12 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Welcome, <span th:text="${username}">User</span>!</h1>
+<a th:href="@{/about}">Go to About Page</a>
+</body>
+</html>
